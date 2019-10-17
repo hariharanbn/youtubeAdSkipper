@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    letter-spacing: auto;
+    line-height: 26px;
+    color: #fff;
+    background-color: #1c1c1c;
+}
+
+/* boostrap css */
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.main-container {
+    width: 300px;
+    padding: 15px;
+}
+.heading{
+    padding: 15px;
+    font-size: 18px;
+    background-color: #343434;
+}
+.controlRow{
+    margin-bottom: 15px;
+}
+
+.labelName{
+    padding-right: 25px;
+    width: 120px;
+}
+/* Slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+}
+
+.switch .switchInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15px;
+    background-color: #414141;
+    -webkit-transition: .4s;
+    transition: .4s;
+    transform: translateY(-50%);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0;
+    bottom: -2px;
+    background-color: #909090;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switchInput:checked+.slider {
+    background-color: #56eb9d;
+}
+
+.switchInput:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.switchInput:checked+.slider:before {
+    background: -webkit-linear-gradient(top, #56eb9d 0%, #00a2f9 80%) no-repeat;
+    background: -moz-linear-gradient(top, #56eb9d 0%, #00a2f9 80%) no-repeat;
+    background: -ms-linear-gradient(top, #56eb9d 0%, #00a2f9 80%) no-repeat;
+    background: linear-gradient(to bottom, #56eb9d 0%, #00a2f9 80%) no-repeat;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
